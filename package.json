@@ -4,7 +4,8 @@
   "description": "curso de automatizacion web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "./node_modules/mocha/bin/mocha --timeout=30000 ./tests"
   },
   "keywords": [
     "vefm"
@@ -13,5 +14,10 @@
   "license": "ISC",
   "devDependencies": {
     "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0",
+    "puppeteer": "^9.1.1"
   }
 }
